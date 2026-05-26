@@ -1,0 +1,113 @@
+.offers {
+  position: relative;
+  padding: var(--section-pad) 0;
+}
+.offers__bg { position: absolute; inset: 0; z-index: 0; }
+.offers__bg-img { width: 100%; height: 100%; object-fit: cover; }
+.offers__bg-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient( 135deg,
+    rgba(43, 45, 83, 0.82) 0%,
+    rgba(82, 90, 194, 0.55) 50%,
+    rgba(156, 132, 212, 0.4) 100%);
+}
+.offers__inner { position: relative; z-index: 1; }
+
+.offers__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin-bottom: 48px;
+}
+
+.offers__card {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  transition: var(--transition);
+  box-shadow: 0 8px 40px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+}
+.offers__card--hover { transform: translateY(-8px); box-shadow: 0 20px 60px rgba(0,0,0,0.35); }
+
+.offers__card-img-wrap { position: relative; height: 220px; overflow: hidden; }
+.offers__card-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+.offers__card--hover .offers__card-img { transform: scale(1.06); }
+
+.offers__badge {
+  position: absolute; top: 16px; right: 16px;
+  background: var(--gold); color: var(--charcoal);
+  font-size: 11px; font-weight: 700; letter-spacing: 0.5px;
+  padding: 6px 14px; border-radius: 20px;
+}
+.offers__tag-chip {
+  position: absolute; bottom: 16px; left: 16px;
+  background: rgba(10, 14, 71, 0.85);
+  color: var(--gold-light);
+  font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 5px 12px; border-radius: 12px;
+  display: flex; align-items: center; gap: 5px;
+  backdrop-filter: blur(4px);
+}
+
+.offers__card-body { padding: 28px; display: flex; flex-direction: column; flex: 1; }
+.offers__card-title { font-family: var(--font-display); font-size: 1.5rem; color: var(--charcoal); margin-bottom: 10px; }
+.offers__card-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 20px; }
+
+.offers__includes { margin-bottom: 20px; }
+.offers__includes-title { font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--gold-dark); margin-bottom: 10px; }
+.offers__includes-list { display: flex; flex-direction: column; gap: 6px; }
+.offers__includes-list li {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 12px; color: var(--text-secondary);
+}
+.offers__includes-list li svg { color: var(--forest); flex-shrink: 0; }
+
+.offers__card-footer { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 18px; margin-top: auto; }
+.offers__pricing { display: flex; align-items: baseline; gap: 10px; }
+.offers__original { font-family: var(--font-display); font-size: 1.1rem; color: var(--text-muted); text-decoration: line-through; }
+.offers__sale { font-family: var(--font-display); font-size: 2rem; color: var(--gold-dark); }
+.offers__validity { font-size: 11px; color: var(--text-muted); text-align: right; max-width: 100px; line-height: 1.4; }
+.offers__cta { width: 100%; justify-content: center; }
+
+/* Promo Banner */
+.offers__promo-banner {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(201,168,76,0.3);
+  border-radius: var(--radius-xl);
+  padding: 36px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  backdrop-filter: blur(8px);
+}
+.offers__promo-content { display: flex; align-items: center; gap: 20px; }
+.offers__promo-emoji { font-size: 36px; }
+.offers__promo-content h4 { font-family: var(--font-display); font-size: 1.3rem; color: var(--cream); margin-bottom: 4px; }
+.offers__promo-content p { font-size: 13px; color: rgba(245,239,224,0.65); }
+.offers__promo-form { display: flex; gap: 12px; flex-shrink: 0; }
+.offers__promo-input {
+  padding: 13px 18px;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.1);
+  color: var(--cream);
+  font-size: 14px;
+  width: 280px;
+  outline: none;
+  backdrop-filter: blur(4px);
+}
+.offers__promo-input::placeholder { color: rgba(245,239,224,0.45); }
+.offers__promo-input:focus { border-color: var(--gold); }
+
+@media (max-width: 1024px) {
+  .offers__grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 768px) {
+  .offers__promo-banner { flex-direction: column; padding: 28px; }
+  .offers__promo-content { flex-direction: column; text-align: center; }
+  .offers__promo-form { width: 100%; flex-direction: column; }
+  .offers__promo-input { width: 100%; }
+}

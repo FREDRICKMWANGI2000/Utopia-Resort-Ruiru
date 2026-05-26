@@ -1,0 +1,95 @@
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+
+  width: 55px;
+  height: 55px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(3, 10, 71, 0.97);
+  color: rgb(255, 166, 0);
+
+  font-size: 24px;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(20px);
+
+  transition: all 0.3s ease;
+
+  z-index: 999999;
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background: rgb(255, 166, 0);
+  color: rgba(3, 10, 71, 0.97);
+
+  transform: scale(1.1);
+}
+
+/* Large Tablets */
+@media (max-width: 992px) {
+  .back-to-top {
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .back-to-top {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+
+    bottom: 18px;
+    right: 18px;
+  }
+}
+
+/* Phones */
+@media (max-width: 576px) {
+  .back-to-top {
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 400px) {
+  .back-to-top {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+
+    bottom: 12px;
+    right: 12px;
+  }
+}

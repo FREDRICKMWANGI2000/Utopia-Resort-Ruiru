@@ -1,0 +1,109 @@
+.testimonials {
+  position: relative;
+  overflow: hidden;
+}
+.testimonials__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.testimonials__bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.testimonials__overlay {
+  position: absolute;
+  inset: 0;
+  align-items: center;
+  background: linear-gradient( 135deg,
+    rgba(43, 45, 83, 0.82) 0%,
+    rgba(82, 90, 194, 0.55) 50%,
+    rgba(156, 132, 212, 0.4) 100%);;
+}
+.testimonials__inner {
+  position: relative;
+  z-index: 1;
+}
+
+.testimonials__carousel {
+  max-width: 760px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 320px;
+}
+.testimonials__card {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.7s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.testimonials__card--active {
+  opacity: 1;
+  pointer-events: auto;
+  position: relative;
+}
+
+.testimonials__quote-icon {
+  color: var(--gold);
+  opacity: 0.5;
+  margin-bottom: 20px;
+}
+.testimonials__text {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-style: italic;
+  color: var(--cream);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+.testimonials__stars {
+  display: flex;
+  gap: 4px;
+  color: var(--gold);
+  margin-bottom: 24px;
+}
+.testimonials__author {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.testimonials__avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--gold);
+}
+.testimonials__name {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--cream);
+}
+.testimonials__occasion {
+  font-size: 12px;
+  color: rgba(245, 239, 224, 0.55);
+}
+
+.testimonials__dots {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 40px;
+}
+.testimonials__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  transition: var(--transition);
+}
+.testimonials__dot--active {
+  background: var(--gold);
+  transform: scale(1.4);
+}

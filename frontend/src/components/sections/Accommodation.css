@@ -1,0 +1,436 @@
+.accommodation {
+  background: var(--cream);
+}
+.h2 {
+  text-align: center;
+  margin-bottom: 48px;
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  color: var(--charcoal);
+}
+.p {
+  text-align: center;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto 64px;
+  line-height: 1.6;
+}
+
+.accom__rooms {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 64px;
+}
+
+.accom__card {
+  position: relative;
+
+  background: var(--black);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+
+  box-shadow: var(--shadow-card);
+
+  transition: all 0.3s ease;
+
+  cursor: pointer;
+
+  border: 2px solid transparent;
+}
+
+.accom__card:hover {
+  background: white;
+  border: 2px solid rgba(3, 10, 71, 0.97);
+
+  transform: translateY(-6px) scale(1.02);
+
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.25);
+}
+
+/* Text hover colors */
+.accom__card:hover .accom__card-name,
+.accom__card:hover .accom__card-desc,
+.accom__card:hover .accom__price,
+.accom__card:hover .accom__capacity,
+.accom__card:hover .accom__card-type {
+  color: var(--charcoal);
+}
+.accom__card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 56px rgba(0, 0, 0, 0.16);
+}
+.accom__card--selected {
+  border-color: var(--gold);
+  box-shadow:
+    0 0 0 4px rgba(201, 168, 76, 0.15),
+    0 16px 56px rgba(0, 0, 0, 0.16);
+}
+
+.accom__badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 3;
+  background: var(--gold);
+  color: var(--charcoal);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+.accom__card-img-wrap {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+.accom__card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.accom__card:hover .accom__card-img {
+  transform: scale(1.06);
+}
+.accom__card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(26, 46, 26, 0.9) 0%,
+    transparent 50%
+  );
+  opacity: 0;
+  transition: var(--transition);
+  display: flex;
+  align-items: flex-end;
+  padding: 16px;
+}
+.accom__card:hover .accom__card-overlay {
+  opacity: 1;
+}
+.accom__card-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.accom__feature {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: var(--cream);
+  background: rgba(255, 255, 255, 0.15);
+  padding: 3px 8px;
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+}
+
+.accom__card-body {
+  padding: 20px;
+}
+.accom__card-type {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 6px;
+}
+.accom__card-name {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--charcoal);
+  margin-bottom: 8px;
+}
+.accom__card-desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 18px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.accom__card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+.accom__price {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+.accom__price-from {
+  font-size: 10px;
+  color: var(--text-muted);
+}
+.accom__price-val {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  color: var(--gold-dark);
+  font-weight: 500;
+}
+.accom__price-per {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+.accom__capacity {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.accom__select-btn {
+  width: 100%;
+  justify-content: center;
+  padding: 10px;
+  font-size: 12px;
+
+  background: white;
+
+  transition: all 0.3s ease;
+}
+
+/* Selected Button */
+.accom__card--selected .accom__select-btn {
+  background: rgba(3, 10, 71, 0.97);
+
+  color: white;
+
+  border: 2px solid rgb(255, 166, 0);
+}
+
+/* Keep same color on hover */
+.accom__card--selected .accom__select-btn:hover {
+  background: rgba(3, 10, 71, 0.97);
+
+  color: white;
+
+  border: 2px solid rgb(255, 166, 0);
+}
+
+/* Booking Form */
+.accom__form-wrap {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  padding: 56px;
+  box-shadow: var(--shadow-card);
+}
+.accom__form-header {
+  margin-bottom: 36px;
+}
+.accom__form-title {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--charcoal);
+}
+.accom__form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.accom__span-2 {
+  grid-column: 1 / -1;
+}
+
+.accom__counter {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  border: 1.5px solid #e0d8c8;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  height: 50px;
+}
+.accom__counter-btn {
+  width: 48px;
+  height: 100%;
+  font-size: 20px;
+  color: var(--gold-dark);
+  background: var(--cream);
+  transition: var(--transition);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.accom__counter-btn:hover {
+  background: var(--gold);
+  color: var(--charcoal);
+}
+.accom__counter-val {
+  flex: 1;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--charcoal);
+}
+
+.accom__form-actions {
+  text-align: center;
+}
+.accom__submit-btn {
+  padding: 16px 56px;
+  font-size: 14px;
+}
+.accom__form-note {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 14px;
+  line-height: 1.6;
+}
+/* Select Container */
+.select__control {
+  background: rgba(3, 10, 71, 0.97) !important;
+
+  border: 2px solid rgb(255, 166, 0) !important;
+
+  border-radius: 12px !important;
+
+  min-height: 55px !important;
+
+  box-shadow: none !important;
+}
+
+.select__control:hover {
+  border-color: rgb(255, 166, 0) !important;
+}
+
+/* Selected Value */
+.select__single-value {
+  color: white !important;
+
+  font-weight: 500;
+}
+
+/* Placeholder */
+.select__placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Dropdown Menu */
+.select__menu {
+  background: rgba(3, 10, 71, 0.97) !important;
+
+  border-radius: 12px !important;
+
+  overflow: hidden;
+}
+
+
+.select__option {
+  color: white !important;
+
+  background: transparent !important;
+
+  cursor: pointer !important;
+}
+
+
+.select__option--is-focused {
+  background: rgb(255, 166, 0) !important;
+
+  color: black !important;
+}
+
+
+.select__option--is-selected {
+  background: rgba(3, 10, 71, 0.97) !important;
+
+  color: white !important;
+}
+
+
+.select__dropdown-indicator {
+  color: rgb(255, 166, 0) !important;
+}
+
+.select__indicator-separator {
+  display: none;
+}
+
+
+.form-select option {
+  background: white;
+
+  color: black;
+}
+
+.accom__success {
+  text-align: center;
+  padding: 48px;
+}
+.accom__success-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--forest);
+  color: var(--gold);
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+}
+.accom__success h3 {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+}
+.accom__success p {
+  color: var(--text-secondary);
+  max-width: 480px;
+  margin: 0 auto 28px;
+  line-height: 1.8;
+}
+/* Submit Button */
+.btn.btn-gold.accom__submit-btn {
+  background: rgb(255, 166, 0);
+
+  color: rgba(3, 10, 71, 0.97);
+
+  border: 2px solid rgb(255, 166, 0);
+
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.btn.btn-gold.accom__submit-btn:hover {
+  background: rgba(3, 10, 71, 0.97);
+
+  color: white;
+
+  border: 2px solid rgb(255, 166, 0);
+}
+@media (max-width: 1200px) {
+  .accom__rooms {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .accom__rooms {
+    grid-template-columns: 1fr;
+  }
+  .accom__form-wrap {
+    padding: 28px 20px;
+  }
+  .accom__form-grid {
+    grid-template-columns: 1fr;
+  }
+  .accom__span-2 {
+    grid-column: auto;
+  }
+}

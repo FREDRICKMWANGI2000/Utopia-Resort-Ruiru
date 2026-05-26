@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 import './Hero.css';
-import slide1 from "../images/Ziplining.png";
+import slide1 from "../images/ziplining.png";
 import slide2 from "../images/backgroundimg1.png";
 import slide3 from "../images/boat.webp";
 

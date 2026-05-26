@@ -4,7 +4,7 @@ import { Phone, Mail, MapPin, Send, MessageCircle } from "lucide-react";
 import { EVENT_TYPES, EVENT_ADDONS } from "../../data/siteData";
 import "./Events.css";
 import eventsimg from "../images/backgroundimg2.png";
-import eventsimg1 from "../images/logo11.png";
+import eventsimg1 from "../images/.png";
 
 export default function Events() {
   const [activeType, setActiveType] = useState("wedding");

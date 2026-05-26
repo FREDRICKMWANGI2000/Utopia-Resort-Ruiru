@@ -3,7 +3,7 @@ import { Utensils, Wine, Sun, Home as HomeIcon } from 'lucide-react';
 import { Phone, Mail, MapPin, Send, MessageCircle } from 'lucide-react';
 import { MENU_CATEGORIES } from '../../data/siteData';
 import './Restaurant.css';
-import componentGardenDiningImg from "../images/gardenDining.png";
+import componentGardenDiningImg from "../images/GardenDining.png";
 import componentTerraceBarImg from "../images/outsideBar.png";
 import tableImg from "../images/table.jpg";
 import axios from "axios";

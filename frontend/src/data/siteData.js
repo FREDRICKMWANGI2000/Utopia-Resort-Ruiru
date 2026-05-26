@@ -167,7 +167,7 @@ export const EVENT_ADDONS = [
 export const ACTIVITIES = [
   {
     name: 'Jet Ski Adventure',
-    image: jetSkiImg,
+    image: jetskiImg,
     desc: 'Experience thrilling high-speed jet ski rides across beautiful waters with breathtaking scenic lake views.',
     duration: '30–45 min',
     ageMin: 8,
@@ -308,7 +308,7 @@ export const OFFERS = [
 import backgroundimg1 from '../components/images/backgroundimg1.png';
 import lakeview from '../components/images/lakeview.png';
 import LuxurySuites from "../components/images/boatriding.png";
-import componentGardenDining from "../components/images/GardenDining.png";
+import componentGardenDining from "../components/images/gardendining.png";
 import Swimming from "../components/images/swimming.png";
 import componentTerraceBar from "../components/images/outsideBar.png";
 

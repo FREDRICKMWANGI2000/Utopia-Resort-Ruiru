@@ -83,7 +83,7 @@ export default function Navbar({ onBookNow }) {
       <div className={`mobile-menu ${menuOpen ? 'mobile-menu--open' : ''}`}>
         <div className="mobile-menu__logo">
           <span className="navbar__logo-icon">✦</span>
-          <span className="navbar__logo-main">AdvaBliss</span>
+          <span className="navbar__logo-main">Utopia Resort</span>
         </div>
         <ul className="mobile-menu__links">
           {NAV_LINKS.map((link, i) => (

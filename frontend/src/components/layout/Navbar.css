@@ -113,8 +113,8 @@
   top: 0;
   right: -100%;
   width: min(360px, 100vw);
-  height: 100vh;
-  background: var(--forest);
+  height: 60vh;
+  background: rgba(3, 10, 71, 0.97) ;
   z-index: 1001;
   transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
@@ -128,7 +128,7 @@
   inset: 0;
   background: rgba(0,0,0,0.5);
   z-index: 1000;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(2px);
 }
 .mobile-menu__logo {
   display: flex;
@@ -151,6 +151,8 @@
   border-radius: 4px;
   width: 100%;
 }
+.mobile-menu__logo .navbar__logo-icon { color: var(--gold); font-size: 18px; }
+
 .mobile-menu__link:hover, .mobile-menu__link--active { color: var(--gold); padding-left: 20px; }
 .mobile-menu__footer {
   padding-top: 24px;

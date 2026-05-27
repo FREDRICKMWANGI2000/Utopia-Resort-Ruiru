@@ -308,7 +308,7 @@ export const OFFERS = [
 import backgroundimg1 from '../components/images/backgroundimg1.png';
 import lakeview from '../components/images/lakeview.png';
 import LuxurySuites from "../components/images/boatriding.png";
-import componentGardenDining from "../components/images/gardendining.png";
+import componentGardenDining from "../components/images/GardenDining.png";
 import Swimming from "../components/images/swimming.png";
 import componentTerraceBar from "../components/images/outsideBar.png";
 

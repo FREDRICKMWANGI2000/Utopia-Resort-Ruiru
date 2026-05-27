@@ -1,4 +1,4 @@
-import jetSkiImg from "../components/images/jetski.jpg";
+import jetskiImg from "../components/images/jetski.jpg";
 import swimmingImg from "../components/images/swimming.png";
 import swingsImg from "../components/images/swings.webp";
 import bouncingImg from "../components/images/bouncingcastle.jpg";

@@ -224,10 +224,6 @@
 
 /* Booking Form */
 .accom__form-wrap {
-  width: 100%;
-  max-width: 100%;
-  padding: 20px 14px;
-  overflow: hidden;
   background: var(--white);
   border-radius: var(--radius-xl);
   padding: 56px;
@@ -244,10 +240,10 @@
 .accom__form-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  gap: 20px;
 }
 .accom__span-2 {
-  grid-column: span 1;
+  grid-column: 1 / -1;
 }
 
 .accom__counter {
@@ -297,11 +293,7 @@
   line-height: 1.6;
 }
 /* Select Container */
-.select__control .custom-select,
-.accom__counter {
-  width: 100% !important;
-  max-width: 100% !important;
-  min-width: 0 !important;
+.select__control {
   background: rgba(3, 10, 71, 0.97) !important;
 
   border: 2px solid rgb(255, 166, 0) !important;
@@ -313,32 +305,6 @@
   box-shadow: none !important;
 }
 
-  .accom__counter {
-    display: flex;
-    overflow: hidden;
-  }
-
-  .accom__counter-btn {
-    width: 56px;
-    flex-shrink: 0;
-  }
-
-  .accom__counter-val {
-    flex: 1;
-    min-width: 0;
-  }
-
-  .select__control {
-    min-height: 56px;
-  }
-
-  .accommodation {
-    overflow-x: hidden;
-  }
-
-  body {
-    overflow-x: hidden;
-  }
 .select__control:hover {
   border-color: rgb(255, 166, 0) !important;
 }
@@ -364,6 +330,7 @@
   overflow: hidden;
 }
 
+
 .select__option {
   color: white !important;
 
@@ -372,17 +339,20 @@
   cursor: pointer !important;
 }
 
+
 .select__option--is-focused {
   background: rgb(255, 166, 0) !important;
 
   color: black !important;
 }
 
+
 .select__option--is-selected {
   background: rgba(3, 10, 71, 0.97) !important;
 
   color: white !important;
 }
+
 
 .select__dropdown-indicator {
   color: rgb(255, 166, 0) !important;
@@ -391,6 +361,7 @@
 .select__indicator-separator {
   display: none;
 }
+
 
 .form-select option {
   background: white;

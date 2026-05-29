@@ -80,7 +80,7 @@ export default function FeaturedEvent() {
               </div>
               <div className="featured-event__meta-item">
                 <Clock size={16} />
-                <span>Event Starts At 1700HRS {formatTime(ev.date)}</span>
+                <span>Event Starts At {formatTime(ev.date)}HRS</span>
               </div>
               <div className="featured-event__meta-item">
                 <MapPin size={16} />

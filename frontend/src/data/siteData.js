@@ -140,7 +140,7 @@ export const MENU_CATEGORIES = {
 export const FEATURED_EVENT = {
   title: 'THE UTOPIA POOL PARTY "Season 5"',
   subtitle: 'Bonfire Nights & Live Entertainment',
-  date: new Date('2026-05-30T14:00:00'),
+  date: new Date('2026-06-19T14:00:00'),
   location: 'Utopia Resort Garden, Ruiru',
   description: 'Best Kenya Show is here! Step into an epic celebration under the stars featuring all Kenyan music styles — Afro-pop, gengetone, gospel, benga, and more. Enjoy live performances, gourmet dining, a silent auction, and a magical garden light show. This is the ultimate Kenyan entertainment experience!!.',
  ticketUrl: '#contact',

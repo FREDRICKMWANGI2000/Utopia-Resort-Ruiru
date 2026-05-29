@@ -379,7 +379,7 @@ export const TESTIMONIALS = [
     rating: 4,
   },
   {
-    name: 'janet Akoth',
+    name: 'Janet Akoth',
     occasion: 'Family Vacation, December 2024',
     avatar: 'https://images.icon-icons.com/2859/PNG/512/avatar_face_girl_female_woman_profile_smiley_happy_people_icon_181665.png',
     text: 'The kids had an absolute blast with the activities, and my husband and I could actually relax! The family suite was incredible — spacious, elegant, and wonderfully child-friendly.',

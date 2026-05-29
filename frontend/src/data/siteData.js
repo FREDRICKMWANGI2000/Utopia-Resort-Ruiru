@@ -379,7 +379,7 @@ export const TESTIMONIALS = [
     rating: 4,
   },
   {
-    name: 'Priya Sharma',
+    name: 'janet Akoth',
     occasion: 'Family Vacation, December 2024',
     avatar: 'https://images.icon-icons.com/2859/PNG/512/avatar_face_girl_female_woman_profile_smiley_happy_people_icon_181665.png',
     text: 'The kids had an absolute blast with the activities, and my husband and I could actually relax! The family suite was incredible — spacious, elegant, and wonderfully child-friendly.',
@@ -389,7 +389,7 @@ export const TESTIMONIALS = [
 
 export const CONTACT_INFO = {
   phone: '+254 790155111',
-  email: 'reservations@utopiaresort.com',
+  email: 'utopiaresortruiru@gmail.com',
   address: 'Utopia Resort, Ruiru, Kenya',
   mapUrl: 'https://maps.app.goo.gl/3BkpmjCEH5qj5aJf6',
   mapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.061527834267!2d36.976389974421764!3d-1.1159798354625545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f475ec4ce3067%3A0xc8b18fe31602df20!2sUTOPIA%20RESORT%20RUIRU!5e0!3m2!1sen!2ske!4v1779817343051!5m2!1sen!2ske',

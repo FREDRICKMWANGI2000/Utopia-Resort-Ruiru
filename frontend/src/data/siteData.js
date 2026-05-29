@@ -261,7 +261,7 @@ export const OFFERS = [
   {
     tag: 'Weekend Escape',
     title: 'Garden Retreat Package',
-    desc: '2 nights in our Deluxe Forest Suite with breakfast daily, a couples\' spa treatment, and a private garden dinner.',
+    desc: '2 nights in our Deluxe Garden Suite with breakfast daily, a couples\' spa treatment, and a private garden dinner.',
     image: "https://scontent-mba2-1.xx.fbcdn.net/v/t39.30808-6/477482833_486622164493099_6713316598582347660_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=4SXngOeVq2YQ7kNvwHGPFMk&_nc_oc=AdoFB6pJKZvsTGwuqqHJOodlB_oKHS-bJ0NkxKx-qyPIFR66VG6q_-5eZvygYjggykY&_nc_zt=23&_nc_ht=scontent-mba2-1.xx&_nc_gid=B11Ht7AXQ3TFWHEXYNH42g&_nc_ss=7b289&oh=00_Af62bRGIapi2BrXp7TjH2VKkwMHqX3eMArq9rTXJLwPMSw&oe=6A183160",
     originalPrice: 860,
     salePrice: 649,

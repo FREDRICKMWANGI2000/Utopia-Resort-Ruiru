@@ -17,7 +17,7 @@ export default function VirtualTour() {
       <div className="container">
         <div className="section-header center">
           <span className="section-label">Virtual Tour</span>
-          <h2 className="section-title">Explore AdvaBliss</h2>
+          <h2 className="section-title">Explore Utopia</h2>
           <div className="divider-gold center" />
           <p className="section-subtitle">
             Take an immersive visual journey through our resort — from lush gardens and luxury suites to our fine dining spaces and event venues.

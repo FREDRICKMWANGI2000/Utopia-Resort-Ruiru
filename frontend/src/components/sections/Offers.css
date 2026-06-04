@@ -62,7 +62,7 @@
   display: flex; align-items: center; gap: 8px;
   font-size: 12px; color: var(--text-secondary);
 }
-.offers__includes-list li svg { color: var(--forest); flex-shrink: 0; }
+.offers__includes-list li svg { color: var(--rgba(3, 10, 71, 0.97)); flex-shrink: 0; }
 
 .offers__card-footer { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 18px; margin-top: auto; }
 .offers__pricing { display: flex; align-items: baseline; gap: 10px; }

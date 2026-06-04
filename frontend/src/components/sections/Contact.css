@@ -51,7 +51,7 @@ a.contact__info-card:hover { border-color: var(--gold); transform: translateY(-3
   position: absolute;
   bottom: 16px; right: 16px;
   background: var(--white);
-  color: var(--forest);
+  color: var(--rgba(3, 10, 71, 0.97));
   font-size: 12px; font-weight: 700;
   padding: 8px 16px;
   border-radius: 20px;

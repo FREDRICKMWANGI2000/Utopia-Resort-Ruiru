@@ -377,7 +377,7 @@
   width: 72px;
   height: 72px;
   border-radius: 50%;
-  background: var(--forest);
+  background: rgba(3, 10, 71, 0.97);
   color: var(--gold);
   font-size: 28px;
   display: flex;

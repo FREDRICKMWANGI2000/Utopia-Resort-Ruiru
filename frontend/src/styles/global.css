@@ -3,9 +3,9 @@
   --gold: #C9A84C;
   --gold-light: #E8C97A;
   --gold-dark: #9A7A2E;
-  --forest: #1A2E1A;
-  --forest-mid: #2D4A2D;
-  --forest-light: #3D6B3D;
+  --rgba(3, 10, 71, 0.97): #1A2E1A;
+  --rgba(3, 10, 71, 0.97)-mid: #2D4A2D;
+  --rgba(3, 10, 71, 0.97)-light: #3D6B3D;
   --cream: #F5EFE0;
   --cream-dark: #E8DCC8;
   --charcoal: #1C1C1C;
@@ -126,13 +126,13 @@ h4, h5, h6 { font-family: var(--font-body); font-weight: 600; }
   background: rgba(255,255,255,0.15);
   border-color: var(--white);
 }
-.btn-forest {
-  background: var(--forest);
+.btn-rgba(3, 10, 71, 0.97) {
+  background: var(--rgba(3, 10, 71, 0.97));
   color: var(--cream);
-  border: 2px solid var(--forest);
+  border: 2px solid var(--rgba(3, 10, 71, 0.97));
 }
-.btn-forest:hover {
-  background: var(--forest-mid);
+.btn-rgba(3, 10, 71, 0.97):hover {
+  background: var(--rgba(3, 10, 71, 0.97)-mid);
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(26,46,26,0.3);
 }
@@ -267,7 +267,7 @@ h4, h5, h6 { font-family: var(--font-body); font-weight: 600; }
   max-width: 360px;
   box-shadow: 0 8px 32px rgba(0,0,0,0.2);
 }
-.toast-success { background: var(--forest); color: var(--cream); }
+.toast-success { background: var(--rgba(3, 10, 71, 0.97)); color: var(--cream); }
 .toast-error { background: #C53030; color: var(--white); }
 
 /* ===== FLOATING BOOK BTN ===== */

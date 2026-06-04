@@ -167,7 +167,7 @@ export default function Accommodation() {
                   </div>
                 </div>
                 <button
-                  className={`btn accom__select-btn ${selected === room.id ? "btn-forest" : "btn-outline-gold"}`}
+                  className={`btn accom__select-btn ${selected === room.id ? "btn-rgba(3, 10, 71, 0.97)" : "btn-outline-gold"}`}
                   onClick={(e) => {
                     e.stopPropagation();
                     setSelected(room.id);

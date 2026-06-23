@@ -6,14 +6,4 @@
     <priority>1.0</priority>
   </url>
 
-  <url>
-    <loc>https://utopia-resort-ruiru.vercel.app/about</loc>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://utopia-resort-ruiru.vercel.app/contact</loc>
-    <priority>0.8</priority>
-  </url>
-
 </urlset>
